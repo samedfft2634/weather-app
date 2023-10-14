@@ -7,15 +7,25 @@
 
 body {
 	background: #222;
+	overflow-y: hidden;
 }
 
+#particles-js {
+	height: 100vh;
+}
+
+
 .card {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
 	width: 90%;
 	max-width: 470px;
 	/* background: linear-gradient(135deg, #02fff2e0,#00feba81); */
 	background-image: linear-gradient(to top, #2ac986c2 0%, #5810afd0 100%);
 	color: #fff;
-	margin: 6.25rem auto 0;
+	/* margin: 6.25rem auto 0; */
 	border-radius: 1.25rem;
 	padding: 2.5rem 2.2rem;
 	text-align: center;
