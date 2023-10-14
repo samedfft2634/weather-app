@@ -1,6 +1,6 @@
 # weather-app
 
-Live: https://samedfft2634.github.io/weather-app/ <br><br>
+<a href="https://samedfft2634.github.io/weather-app/">🔥LIVE🔥</a>  <br><br>
 
 Note :14_10_2023 created and non-responsive. I will work on it. <br><br>
-Credit : <a href="https://linktr.ee/iamavinashkr" target="_blank" />
+ <a href="https://linktr.ee/iamavinashkr" target="_blank" >CREDIT</a>
