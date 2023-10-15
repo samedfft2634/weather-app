@@ -14,12 +14,11 @@ body {
 	height: 100vh;
 }
 
-
 .card {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 	width: 90%;
 	max-width: 470px;
 	/* background: linear-gradient(135deg, #02fff2e0,#00feba81); */
@@ -125,8 +124,21 @@ body {
 	display: none;
 }
 
-
 :focus {
-    outline: 2px solid #007bff; 
-    outline-offset: 2px; 
-  }
+	outline: 2px solid #007bff;
+	outline-offset: 2px;
+}
+
+/* ---------------------------------- medıa --------------------------------- */
+@media screen and (max-width: 576px) {
+	.search input {
+		margin-right: 1rem;
+		width: 20%;	
+	}	
+}
+@media screen and (max-width:454px) {
+	.details {
+		display: grid;
+		gap: 2rem;
+	}
+}

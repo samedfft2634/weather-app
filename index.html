@@ -5,8 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Weather App</title>
 		<link rel="stylesheet" href="style.css" />
-		<link rel="shortcut icon" href="./assets/summer.png" type="image/x-icon">
-
+		<link
+			rel="shortcut icon"
+			href="./assets/summer.png"
+			type="image/x-icon"
+		/>
 	</head>
 	<body>
 		<div id="particles-js"></div>
@@ -78,9 +81,8 @@
 
 				if (response.status == 404) {
 					document.querySelector(".error").style.display = "block";
-                    document.querySelector(".errors").style.display = "none"
+					document.querySelector(".errors").style.display = "none";
 					document.querySelector(".weather").style.display = "none";
-
 				} else {
 					var data = await response.json();
 					document.querySelector(".city").innerHTML = data.name;
@@ -112,6 +114,7 @@
 				if (event.key === "Enter") {
 					if (searchBox.value.trim() !== "") {
 						checkWeather(searchBox.value);
+						searchBox.value = "";
 					} else {
 						document.querySelector(".weather").style.display =
 							"none";
@@ -120,19 +123,15 @@
 					}
 				}
 			});
-			searchBtn.addEventListener("click", () => {               
-					if (searchBox.value.trim() !== "") {
-						checkWeather(searchBox.value);
-					} else {
-						document.querySelector(".weather").style.display =
-							"none";
-						document.querySelector(".errors").style.display =
-							"block";
-					}
-				
+			searchBtn.addEventListener("click", () => {
+				if (searchBox.value.trim() !== "") {
+					checkWeather(searchBox.value);
+				} else {
+					document.querySelector(".weather").style.display = "none";
+					document.querySelector(".errors").style.display = "block";
+				}
 			});
 		</script>
-
 	</body>
 </html>
 
